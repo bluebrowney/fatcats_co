@@ -15,8 +15,7 @@ const props = defineProps([
   <div class="h-[15em] w-[250px] bg-blue-200 p-4 rounded-md flex-shrink-0 flex flex-col justify-between items-center">
     <h2>{{ props.iname }}</h2>
     <img 
-      v-if="props.ipsrc"
-      :src="props.ipsrc" 
+      :src="props.ipsrc != '' ? props.ipsrc : '/404.png'" 
       class="rounded-md border-2 border-sky-500"
     >
     <p class="text-sm">{{props.ipdesc ? props.ipdesc : ""}}</p>
