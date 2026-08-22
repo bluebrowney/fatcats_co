@@ -61,6 +61,7 @@ onUnmounted(() => {
       isScrolled || !isHomepage ? 'bg-white' : 'bg-blue-300',
       isScrolled || !isHomepage ? 'translate-y-0' : '-translate-y-8',
       isScrolled || !isHomepage ? 'rounded-b-xl' : 'rounded-none',
+      isScrolled || !isHomepage ? 'shadow-lg' : '',
       'text-center',
       'flex',
       'relative',
@@ -79,10 +80,11 @@ onUnmounted(() => {
          'rounded-full',
          'z-10',
          'transition-all',
+         'p-1', 
          isHomepage && !isNavigating ? 'duration-300' : 'duration-0'
         ]"
         to="/"
-      ></NuxtLink>
+      ><img src="/icon.png"></NuxtLink>
 
       <div :class="[
          isScrolled || !isHomepage ? 'translate-y-0' : 'translate-y-20',
@@ -112,14 +114,14 @@ onUnmounted(() => {
 
 
       <div :class="[
-           isScrolled || !isHomepage ? 'h-[50px]' : 'h-[75px]',
-           isScrolled || !isHomepage ? 'w-[50px]' : 'w-[75px]',
-           'bg-blue-500',
+           isScrolled || !isHomepage ? 'h-[30px]' : 'h-[50px]',
+           isScrolled || !isHomepage ? 'w-[30px]' : 'w-[50px]',
            'z-10',
            'transition-all',
           isHomepage && !isNavigating ? 'duration-200' : 'duration-0'
         ]"
    >
+        <img src="/menu_button.svg">
       </div>
     </div>
   </div>

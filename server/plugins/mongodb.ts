@@ -6,7 +6,7 @@ export default defineNitroPlugin(async () => {
   try {
     if (mongoose.connection.readyState === 1) return
     
-    await mongoose.connect(config.mongodbUri)
+    await mongoose.connect(config.mongodbUri, { dbName: 'fatcats_web_data' })
     console.log('Successfully connected to MongoDB Cluster')
   } catch (error) {
     console.log('ERROR: Failed to connect to MongoDB Cluster')

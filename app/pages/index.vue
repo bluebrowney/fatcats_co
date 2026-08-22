@@ -4,10 +4,10 @@
       <p class="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie, dolor vitae maximus accumsan</p>
       <NuxtLink class="bg-blue-900 py-1 px-4 text-white  rounded-lg" to="/menu">Menu</NuxtLink>
     </div>
-    <img src="/icon.png">
+    <img width="100px" src="/icon.png">
   </div>
   <div class="bg-blue-700 flex justify-between items-center mt-10">
-    <img src="/icon.png">
+    <img width="100px" src="/icon.png">
     <div class="flex flex-col items-center space-y-3 p-6">
       <p class="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie, dolor vitae maximus accumsan</p>
       <NuxtLink class="bg-blue-900 py-1 px-4 text-white  rounded-lg " to="/calendar">Calendar</NuxtLink>
