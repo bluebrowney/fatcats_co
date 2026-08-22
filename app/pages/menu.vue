@@ -2,6 +2,8 @@
 
 const sections = [{ title: "Specialties", notes: "Make It Catnip Style: Our Signatures with Matacha Instead"}, {title:"Coffee"}, {title:"Tea"}, {title:"Syrups"}, {title:"Milks & Addons"}]
 
+const { data: menuItems } = await useFetch('/api/menuitems')
+console.log(menuItems.value)
 </script>
 
 <template>

@@ -33,5 +33,8 @@ export default defineNuxtConfig({
         {textContent : 'html { scroll-behavior: smooth; }'}
       ]
     }
-  } 
+  },
+  runtimeConfig : {
+    mongodbUri: process.env.MONGODB_URI
+  },
 })
